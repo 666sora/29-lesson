@@ -79,7 +79,7 @@ class Circle: virtual public Shape {
                 std::cout << "Invalid side" << std::endl;
             }
             else {
-                inRadius = radius;
+                radius = inRadius;
             }
         }
 };
@@ -130,6 +130,10 @@ void printParams(Shape *shape) {
 int main() {
     Triangle t(3, 4, 5);
     printParams(&t);
+    Circle c(10);
+    printParams(&c);
+    Rectangle r(10, 20);
+    printParams(&r);
 }
 
 /*
